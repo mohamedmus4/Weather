@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: #fff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #1a1a2e !important;
+  padding: 16px 32px;
+  height: 106px;
+}
+
+.navbar-brand i {
+  color: rgb(0, 154, 216);
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.logo-img {
+  width: 80px;
+  height: 40px;
+}
+
+.weather-title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.weather-tagline {
+  font-size: 14.4px;
+  color: #ccc;
+}
+
+section {
+  background-color: #262936;
+  width: 100%;
+  margin-top: auto;
+}
+
+section p {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.navbar-brand small {
+  color: #ccc;
+  font-size: 12.8px;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f8f8 !important;
+  font-size: 16px;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  border: 1px solid rgb(0, 154, 216);
+  color: rgb(0, 154, 216) !important;
+  text-decoration: none;
+}
+
+.home {
+  border: 1px solid rgb(0, 154, 216);
+  color: rgb(0, 154, 216) !important;
+  text-decoration: none;
+}
+
+.background-image {
+  height: 250px;
+  background: url("https://images.unsplash.com/photo-1506477304890-6e9f368c53c6") no-repeat center;
+  background-size: cover;
+  margin-top: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.container {
+  padding: 32px;
+  text-align: center;
+  flex: 1;
+}
+
+.search-box input.form-control {
+  background: #2e2e3e;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 71%;
+  height: 50px;
+  right: -48px;
+  position: relative;
+}
+
+.search-box button.btn-primary {
+  background: #00d4ff;
+  border: none;
+}
+
+.search-box button.btn-primary:hover {
+  background: #00b3cc;
+}
+
+.weather-grid {
+  margin-top: 16px;
+}
+
+.weather-grid .card {
+  background: #323544;
+  border: none;
+  border-radius: 15px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  color: #fff;
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.weather-grid .card:first-child {
+  background: #323544;
+}
+
+.weather-grid .card:nth-child(2){
+  margin-inline: 10px;
+}
+.weather-grid .card:nth-child(2),
+.weather-grid .card:nth-child(3) {
+  background: #262936;
+  text-align: center;
+}
+
+.weather-grid .card:nth-child(2) h3,
+.weather-grid .card:nth-child(3) h3 {
+  background: #323544;
+  text-align: center;
+}
+
+.weather-grid .card h3 {
+  font-size: 17.6px;
+  margin-bottom: 8px;
+  color: #ccc;
+  background-color: #262936;
+  padding: 16px;
+  text-align: center;
+}
+
+.weather-grid .card h2 {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.weather-grid .card .temp {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.weather-grid .card:nth-child(2) .temp,
+.weather-grid .card:nth-child(3) .temp {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-grid .card .temp .min-temp {
+  font-size: 17px;
+  color: #ccc;
+}
+
+.weather-grid .card .condition {
+  font-size: 19.2px;
+  color: #00d4ff;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.weather-grid .card:nth-child(2) .condition,
+.weather-grid .card:nth-child(3) .condition {
+  padding-left: 0;
+}
+
+.weather-grid .card .details {
+  font-size: 14.4px;
+  color: #bbb;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.weather-grid .card .details .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-grid .card .details i {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.weather-grid .card img {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.weather-grid .card:nth-child(2) img,
+.weather-grid .card:nth-child(3) img {
+  padding-left: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.subscribe-box input.form-control {
+  background: #2e2e3e;
+  color: #fff;
+  border: none;
+  outline: none;
+  height: 50px;
+}
+
+.subscribe-box button.btn-primary {
+  background: #009ad8;
+  border: none;
+  height: 45px;
+  border-radius: 25px;
+}
+
+.row {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer .social-icons i {
+  color: #00d4ff;
+  font-size: 19.2px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #1a1a2e;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.custom-input {
+  border-radius: 25px;
+}
+
+.custom-button {
+  top: 2px;
+  border-radius: 25px;
+  width: 94px;
+  position: relative;
+  right: 50px;
+  height: 45px;
+  background-color: #009ad8;
+}
+
+
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 8px 0;
+  }
+
+  .search-box input.form-control {
+    width: 100%;
+    right: 0;
+  }
+
+  .custom-button {
+    right: 0;
+    margin-top: 8px;
+    top: -3px;
+
+      }
+
+}
+
+@media (max-width: 767px) {
+  .weather-grid .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .subscribe-box input.form-control {
+    width: 100%;
+    top: 0;
+  }
+
+  .subscribe-box button.btn-primary {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  footer .social-icons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .weather-grid .card {
+    width: calc(33.333% - 16px);
+  }
+
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+  }
+
+  .subscribe-box input.form-control {
+    width: 250px;
+  }
+
+  .subscribe-box button.btn-primary {
+    width: 120px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <!-- Font awesome library -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/imgs/logo.png" alt="Weather Logo" class="logo-img me-2">
+        <div class="d-flex flex-column">
+          <span class="weather-title">Weather</span>
+          <span class="weather-tagline">tagline goes here</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link home" href="#">Home</a>
+          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#">Live cameras</a>
+          <a class="nav-link" href="#">Photos</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="background-image">
+    <img src="assets/imgs/banner.png" alt="banner">
+  </div>
+  <div class="container">
+    <div class="search-box d-flex justify-content-center mt-4">
+      <input type="text" id="cityInput" class="form-control custom-input" placeholder="Find your location..." />
+      <button class="btn btn-primary custom-button btn-10" id="findBtn">Find</button>
+    </div>
+    <div class="weather-grid row justify-content-center mt-4" id="weatherCards">
+    </div>
+  </div>
+  <section>
+    <footer class="text-center py-3">
+      <div class="footer-content">
+        <div class="subscribe-box">
+          <input type="email" class="form-control custom-input" placeholder="Enter your email.." />
+          <button class="btn btn-primary custom-button btn-11 ">Subscribe</button>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </footer>
+  </section>
+
+  <!-- Bootstrap JS file -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
